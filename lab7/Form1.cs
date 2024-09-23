@@ -100,6 +100,12 @@ namespace lab7
         }
 
         // Калькулятор
+
+        private void calcContainer_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
             calcContainer.Clear();

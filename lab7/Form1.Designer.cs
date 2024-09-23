@@ -48,6 +48,7 @@
             counter = new Button();
             showBtnCount = new System.Windows.Forms.DataVisualization.Charting.Chart();
             tabPage4 = new TabPage();
+            buttonEqual = new Button();
             button19 = new Button();
             button17 = new Button();
             button16 = new Button();
@@ -66,7 +67,6 @@
             button3 = new Button();
             button2 = new Button();
             calcContainer = new TextBox();
-            buttonEqual = new Button();
             changeColor.SuspendLayout();
             tabPage1.SuspendLayout();
             mainTabControl.SuspendLayout();
@@ -274,6 +274,16 @@
             tabPage4.Text = "Калькулятор";
             tabPage4.UseVisualStyleBackColor = true;
             // 
+            // buttonEqual
+            // 
+            buttonEqual.Location = new Point(292, 134);
+            buttonEqual.Name = "buttonEqual";
+            buttonEqual.Size = new Size(44, 23);
+            buttonEqual.TabIndex = 19;
+            buttonEqual.Text = "=";
+            buttonEqual.UseVisualStyleBackColor = true;
+            buttonEqual.Click += buttonEquals_Click;
+            // 
             // button19
             // 
             button19.Location = new Point(442, 250);
@@ -450,16 +460,7 @@
             calcContainer.Name = "calcContainer";
             calcContainer.Size = new Size(194, 23);
             calcContainer.TabIndex = 0;
-            // 
-            // buttonEqual
-            // 
-            buttonEqual.Location = new Point(292, 134);
-            buttonEqual.Name = "buttonEqual";
-            buttonEqual.Size = new Size(44, 23);
-            buttonEqual.TabIndex = 19;
-            buttonEqual.Text = "=";
-            buttonEqual.UseVisualStyleBackColor = true;
-            buttonEqual.Click += buttonEquals_Click;
+            calcContainer.KeyPress += calcContainer_KeyPress;
             // 
             // lab7
             // 
