@@ -174,7 +174,6 @@
             mainTabControl.SelectedIndex = 0;
             mainTabControl.Size = new Size(799, 448);
             mainTabControl.TabIndex = 4;
-            mainTabControl.SelectedIndexChanged += tabControl1_SelectedIndexChanged;
             // 
             // tabPage3
             // 
@@ -471,7 +470,6 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "lab7";
             Text = "Зомбидаболатория";
-            Load += Form1_Load;
             changeColor.ResumeLayout(false);
             changeColor.PerformLayout();
             tabPage1.ResumeLayout(false);
